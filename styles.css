@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(122, 198, 233);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  margin: 2rem;
+  width: 400px;
+  display: flex;
+}
+
+#task,
+#add {
+  border: none;
+  padding: 0.3rem 0.5rem;
+  outline: none;
+}
+
+#task {
+  flex: 3;
+}
+
+#add {
+  flex: 1;
+  width: 100px;
+  color: #333;
+  background: hsl(160, 100%, 75%);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#add:hover {
+  background: hsl(160, 100%, 65%);
+}
+
+#todos {
+  background: white;
+  padding: 1rem;
+  width: 400px;
+  word-wrap: normal;
+}
+
+#todos ul {
+  list-style-type: none;
+}
+
+#todos ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px dashed #eee;
+  padding: 0.4rem;
+  margin: 5px;
+}
+
+.remove,
+.edit {
+  background: transparent;
+  border: none;
+  padding: 0.4rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.fa-pencil-alt {
+  color: hsl(160, 100%, 45%);
+}
+
+.fa-trash-alt {
+  color: rgb(255, 139, 100);
+}
